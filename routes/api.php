@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\VisitorController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\SiteInfoController;
+use App\Http\Controllers\Admin\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,4 @@ use App\Http\Controllers\Admin\SiteInfoController;
 Route::get('/get-visitor', [VisitorController::class, 'GetVisitorDetails']);
 Route::post('/post-contact', [ContactController::class,'PostContactDetails']);
 Route::get('/all-site-info', [SiteInfoController::class,'AllSiteInfo']);
+Route::get('/all-category', [CategoryController::class, 'AllCategory']);
