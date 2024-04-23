@@ -28,3 +28,4 @@ Route::post('/post-contact', [ContactController::class, 'PostContactDetails']);
 Route::get('/all-site-info', [SiteInfoController::class, 'AllSiteInfo']);
 Route::get('/all-category', [CategoryController::class, 'AllCategory']);
 Route::get('/all-product-list-by-remark/{remark}', [ProductListController::class, 'AllProductListByRemark']);
+Route::get('/all-product-list-by-category/{category}', [ProductListController::class, 'AllProductListByCategory']);
