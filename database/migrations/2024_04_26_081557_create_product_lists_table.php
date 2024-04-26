@@ -17,8 +17,10 @@ return new class extends Migration
             $table->string('price');
             $table->string('special_price');
             $table->string('image');
-            $table->string('category');
-            $table->string('subcategory');
+            $table->integer('categoriesID'); // relasi ke categories table
+            // $table->string('category');
+            $table->integer('subcategoriesID'); // relasi ke subcategories table
+            // $table->string('subcategory');
             $table->string('remark');
             $table->string('star');
             $table->string('product_code');
